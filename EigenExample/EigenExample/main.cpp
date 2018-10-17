@@ -46,7 +46,7 @@ int main()
 	
 	
 
-	SimplicialCholesky<SparseMatrix<double>> chol(A);
+	SimplicialCholesky<SparseMatrix<double>> chol(ATA);
 	MatrixXd result = chol.solve(b);
 
 	for (int i = 0; i < 3; i++)
