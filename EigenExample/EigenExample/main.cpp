@@ -4,8 +4,12 @@
 using namespace std;
 using namespace Eigen;
 
+
+
+
 int main()
 {
+	
 	// solve the linear system
 	// 5x + 2y + 6z = 14
 	// 3x +      9z = 10
@@ -14,8 +18,8 @@ int main()
 
 	vector<Triplet<double>> a;
 
-	//VectorXd can be also in 2d 
-	//eg. VectorXd b(2,2);
+	//can be also in 2d 
+	//eg. MatrixXd b(2,2);
 	//b(0,0)= ...
 
 	VectorXd b(4);
@@ -51,5 +55,7 @@ int main()
 
 	for (int i = 0; i < 3; i++)
 		cout << result(i)<< endl;
+
+
 	getchar();
 }
